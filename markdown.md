@@ -331,6 +331,16 @@ Example:
 - [x] Cook dinner
 - [ ] Commit war crimes
 
+Syntax:
+
+```md
+- [x] Clean the house
+  - [x] Mop the floor
+  - [X] Dust the shelves
+- [x] Cook dinner
+- [ ] Commit war crimes
+```
+
 ## Tables
 
 Another important but likely overlooked feature is the ablility to create tables by assembling a list of words and dividing them with hyphens (-) (for the table header row), and then separating each column with a pipe |.
