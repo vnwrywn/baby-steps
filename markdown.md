@@ -1,6 +1,6 @@
 # Markdown
 
-Markdown is a lightweight markup language that is used to create formatted text through a plaintext editor. Markdown is intended to be a writing language, as opposed to publishing language such as HTML, thus it is very readable, i.e. its formatting can be read in the absent of tags or formatting instructions like those in RTF or HTML.
+Markdown is a lightweight markup language that is used to create formatted text through a plaintext editor. Markdown is intended a writing language, as opposed to publishing language such as HTML, thus it is very readable, i.e. its formatting can be read in the absent of tags or formatting instructions like those in RTF or HTML.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ Markdown is widely used in readme files, forum & blog posts, and static site gen
 
 # Writing in Markdown 
 
-Before we get down to brass tacks, there are several important concepts in writing a markdown document that you need to grasp.
+Before we get to the brass tacks, there are several important concepts in writing a markdown document that you need to grasp.
 
 ## Hard-wrapped
 
