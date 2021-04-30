@@ -309,12 +309,12 @@ To make any word to appear crossed out for whatever reason, you could surround i
 
 Example:
 
-There's still ~~a lot of~~ mistakes to be corrected.
+There are still ~~a lot of~~ mistakes to be corrected.
 
 Syntax:
 
 ```md
-There's still ~~a lot of~~ mistakes to be corrected.
+There are still ~~a lot of~~ mistakes to be corrected.
 ```
 
 ### Syntax Highlighting
