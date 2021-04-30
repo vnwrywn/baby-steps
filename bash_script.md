@@ -1,9 +1,10 @@
-# Bash Scripting
+# Bash Scripting <!-- omit in toc -->
 
 Bash scripting is making a series of commands in a plain text file called bash scripts. The goal of
 bash scripting is to make everyday routine less tedious to perform.
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
+
 - [Variables](#variables)
   - [Special variables](#special-variables)
 - [Input](#input)
@@ -27,18 +28,18 @@ bash scripting is to make everyday routine less tedious to perform.
   - [Local variable](#local-variable)
   - [Overriding commands](#overriding-commands)
 
-# Variables
+## Variables
 
 A variable is a temporary store for a piece of information. There are two operation that can be performed
 on a variable; setting and reading the value of a variable. A variable is read and reffered by placing a
 "$" sign before the name of the variable. A variable may be placed in anywhere in a script, in which it
 will be replace by its value when the script is run.
 
-## Special variables
+### Special variables
 
 - $0 -> The name of the Bash script.
 - $1 - $9 -> The first 9 arguments to the Bash script. (As mentioned above.)
-- $# -> How many arguments were passed to the Bash script.
+- $## -> How many arguments were passed to the Bash script.
 - $@ -> All the arguments supplied to the Bash script.
 - \$? -> The exit status of the most recently run process.
 - \$$ -> The process ID of the current script.
@@ -48,18 +49,18 @@ will be replace by its value when the script is run.
 - $RANDOM -> Returns a different random number each time is it referred to.
 - $LINENO -> Returns the current line number in the Bash script.
 
-# Input
+## Input
 
 Most scripts will require inputs to perform their designated tasks. These inputs will then be assigned as
 a value of a variable or used right away. The following command will assign the input to a variable
 named var.
 >read var
 
-# Operations
+## Operations
 
 An arithmetic operations is often an integral part of our daily routine.
 
-## let
+### let
 
 Allows simple arithmetic operations.
 
@@ -74,55 +75,59 @@ Allows simple arithmetic operations.
 - % -> returns modulus
 
 e.g:
+
 ```bash
 let "var = 1 + 1"
-echo $var # 2
+echo $var ## 2
 let var++
-echo $var # 3
+echo $var ## 3
 ```
 
-## expr
+### expr
 
 Similiar to let, but prints the result instead of assigning it to a variable
 
 >expr item1 operator item2
 
 e.g:
+
 ```bash
-expr 1 + 1 # 2
+expr 1 + 1 ## 2
 var=$( expr 2 + 2 )
-echo $var # 4
+echo $var ## 4
 ```
 
-## Double parentheses
+### Double parentheses
 
 Similiar to let.
 
 >$(( expression ))
 
 e.g:
+
 ```bash
 var=$(( 1 + 1 ))
-echo var # 2
+echo var ## 2
 (( var++ ))
-echo var # 3
+echo var ## 3
 ```
 
-## Length of a variable
+### Length of a variable
 
 Used to get the number of characters a variable has.
 
 >${#variable}
 
 e.g:
+
 ```bash
 var=11
-echo ${#var} # 2
+echo ${#var} ## 2
 ```
 
-# Conditionals
+## Conditionals
 
-## If statements
+### If statements
 
 Functions like any other if function
 
@@ -138,7 +143,7 @@ then
 fi
 ```
 
-## Case Statements
+### Case Statements
 
 Again, not much difference from the usual case statements
 
@@ -153,9 +158,10 @@ case <variable> in
 esac
 ```
 
-## Test
+### Test
 
 The following are operators for test:
+
 - ! EXPRESSION -> The EXPRESSION is false.
 - -n STRING -> The length of STRING is greater than zero.
 - -z STRING -> The lengh of STRING is zero (ie it is empty).
@@ -172,14 +178,14 @@ The following are operators for test:
 - -x FILE -> FILE exists and the execute permission is granted.
 - *= will do a string comparison, but -eq will do a numarical comparison*
 
-## Boolean Operations
+### Boolean Operations
 
 - && -> and
 - || -> or
 
-# Loops
+## Loops
 
-## While loops
+### While loops
 
 Regular while loops. You know the drill.
 
@@ -190,7 +196,7 @@ do
 done
 ```
 
-## Until loops
+### Until loops
 
 Like while loops, but the commands will be executed until the test becomes true
 
@@ -201,7 +207,7 @@ do
 done
 ```
 
-## For loops
+### For loops
 
 I'm starting to feel that i don't need to add an explaination for every single thing.
 
@@ -221,14 +227,14 @@ do
 done
 ```
 
-## Break and continue
+### Break and continue
 
 Yup, like any other break and continue
 
 - break -> stops the looping process
 - continue -> stops the current cycle and skips ahead to the next
 
-## Select
+### Select
 
 Allows you to make a simple menu system
 
@@ -239,7 +245,7 @@ do
 done
 ```
 
-# Funtions
+## Funtions
 
 ```bash
 function_name () {
@@ -257,13 +263,13 @@ function function_name {
 }
 ```
 
-## Local variable
+### Local variable
 
 Used to make a variable only available for a function
 
 >local var_name=<var_value>
 
-## Overriding commands
+### Overriding commands
 
 Overrides a command by creating a method of the same name as the command
 e.g:
@@ -272,5 +278,5 @@ e.g:
 ls () {
     command ls -lh
     }
-ls # ls -lh
+ls ## ls -lh
 ```
