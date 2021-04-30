@@ -111,14 +111,20 @@ This is also a second level header <!-- omit in toc -->
 
 ```md
 # This is a first level header
+
 ## This is a second level header
+
 ### This is a third level header
+
 #### This is a fourth level header
+
 ##### This is a fifth level header
+
 ###### This is a sixth level header
 
 This is also a first level header
 ===
+
 This is also a second level header
 ---
 ```
@@ -261,11 +267,13 @@ In this day and age, many documents also include images attached to them. Not wa
 
 Example:
 
+![Screenshot](images/Screenshot.png)
 ![WW2 French flag](https://i.pinimg.com/originals/4b/b5/7a/4bb57a18a191dd55ca100560e6e91fd1.png)
 
 Syntax:
 
 ```md
+![Screenshot](images/Screenshot.png)
 ![WW2 French flag](https://i.pinimg.com/originals/4b/b5/7a/4bb57a18a191dd55ca100560e6e91fd1.png)
 ```
 
